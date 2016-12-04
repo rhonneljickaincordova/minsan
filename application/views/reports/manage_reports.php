@@ -49,7 +49,7 @@
 
 				    </tr>
 				    <tr>
-				    	<td><a href=""><b>List of Staff Employee</b></a></td>
+				    	<td><a href="<?php echo base_url().('staff/reports/ActiveEmployeeList');?>"><b>List of Staff Employee</b></a></td>
 				    	<td></td>
 				    	<td></td>
 				    	<td></td>
@@ -63,7 +63,7 @@
 
 				    </tr>
 				    <tr>
-				        <td><a href=""><b>Client's Master List</b></a></td>
+				        <td><a href="<?php echo base_url().('staff/reports/ClientMasterList');?>"><b>Client's Master List</b></a></td>
 				        <td></td>
 				    	<td></td>
 				    	<td></td>
