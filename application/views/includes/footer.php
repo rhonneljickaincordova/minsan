@@ -12,6 +12,8 @@
 
 
 <script src="<?php echo base_url(); ?>assets/js/client/add_client.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/client/list_client.js"></script>
+
 
 <script src="<?php echo base_url(); ?>bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>bower_components/bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

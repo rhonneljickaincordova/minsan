@@ -22,7 +22,7 @@
 		    	<div class="col-lg-4">
 					<div class="form-group">
 					    <label for="email">Client Number :</label>
-					    <input type="text" class="form-control"  autofocus ng-model="client_number">
+					    <input type="text" class="form-control"  autofocus ng-model="client_number" readonly>
 					</div>
 					<div class="form-group">
 					    <label for="email">Name :</label>
@@ -98,7 +98,7 @@
 
 				      </tr>
 				    </thead>
-				    <tbody ng-repeat="contract_information_list in list">
+				    <tbody>
 				    <tr>
 				        <td>
 				        	<input type="text" class="form-control">	
@@ -125,7 +125,7 @@
 				    		<input type="text" class="form-control">
 				    	</td>
 				    	<td>
-				    		<a type="button" class="btn btn-primary save-button" ng-click="addRowContractInformation()"> 
+				    		<a type="button" class="btn btn-primary save-button pull-right" ng-click="addRowContractInformation()"> 
 								<i class="fa fa-plus" aria-hidden="true"></i> 
 							</a>
 				    	</td>
@@ -160,8 +160,8 @@
 				        <td>
 				        	<input type="text" class="form-control">
 				        </td>
-				        <td>
-				        	<a type="button" class="btn btn-primary save-button" ng-click="addRowDutyInformation()">
+				        <td >
+				        	<a type="button" class="btn btn-primary save-button pull-right" ng-click="addRowDutyInformation()">
 								<i class="fa fa-plus" aria-hidden="true"></i> 
 							</a>
 				        </td>

@@ -13,8 +13,18 @@ class Client extends CI_Controller{
 	}
 
 	function get_all_client(){
-
+        $_POST = json_decode(file_get_contents('php://input'), true);
+        $id = $_POST['id'];
+        $data['clients'] = $this->Client_model->get_all_clients();
+        return print json_encode($data);
 	}
+
+    function get_client_data(){
+        $_POST = json_decode(file_get_contents('php://input'), true);
+        $id = $_POST['id'];
+        $data['client'] = $this->Client_model->get_client_data($id);
+        return print json_encode($data );
+    }
 
 	function save_client(){
 

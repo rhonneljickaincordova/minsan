@@ -13,59 +13,38 @@ angular.module('misasApp')
 			$scope.general_action = $action;
 			console.log($scope.general_action);
 			if($scope.general_action == 'edit'){
-				$scope.get_employee_data($scope.employee_number);
+				$scope.get_client_data($scope.client_number);
 			}
 
 		}
-		$scope.get_employee_data = function($id){
+		$scope.get_client_data = function($id){
 
 				var data = angular.toJson({
 					id: $id,
 				});
 				$scope.file =  $http({
 			        method  : 'POST',
-			        url     : '../employee/get_employee_data',
+			        url     : '../client/get_client_data',
 			        data    :  data, //forms user object
 			        headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
 			        })
 			        .success(function(data){
-			        	angular.forEach(data.employees,function(data){
-			        		$scope.employee_number = data.employee_id;
-							$scope.family_name = data.family_name;
-							$scope.given_name = data.given_name;
-							$scope.middle_initial = data.middle_initial;
-							$scope.sex = data.sex;
-							$scope.birthdate = new Date(data.birthdate);
-							$scope.license = data.license;
-							$scope.expiry = new Date(data.expiry);
-							$scope.retirement = data.retirement;
-							$scope.policy_number = data.policy_number;
-							$scope.premium = data.premium;
-							$scope.contact = data.contact_number;
-							$scope.position = data.position;
-							$scope.status = data.status;
-							$scope.date_res = new Date(data.date_res);
+			        	console.log(data);
+			        	angular.forEach(data.client,function(data){
+							$scope.client_number = data.client_id;
+							$scope.client_name = data.name;
 							$scope.address = data.address;
-							$scope.client = data.client;
-							$scope.agency = data.agency;
-							$scope.branch = data.branch;
-							$scope.hou_account = data.hou_account;
-							$scope.cs = data.cs;
-							$scope.cedula = data.cedula;
-							$scope.dep = data.dep;
-							$scope.sss_no = data.sss_no;
-							$scope.pagibig_no = data.pag_ibig_no;
-							$scope.acct_no = data.acct_no;
-							$scope.date_hire = new Date(data.date_hire);
-							$scope.insurance = data.insurance;
-							$scope.legal_policy_number = data.legal_policy_number;
-							$scope.legal_expiry = new Date(data.legal_expiry);
-							$scope.legal_premium = data.legal_premium;
-							$scope.mode_pay = data.mode_pay;
-							$scope.rate = data.rate;
-							$scope.effectivity = new Date(data.effectivity);
-							$scope.sss_group = data.sss_group;
-							$scope.pagibig_group = data.pag_ibig_group;
+							$scope.contact_person = data.contact_person;
+							$scope.tel_number = data.telephone_number;
+							$scope.agn_brn = data.agn_brn;
+							$scope.tax_percentage = data.tax;
+							$scope.vat_percentage = data.vat;
+							$scope.sss = data.sss;
+							$scope.n_prn = data.n_prn;
+							$scope.effective = new Date(data.effective);
+						
+
+			        		
 			        	});
 			       	});	
 
@@ -83,11 +62,10 @@ angular.module('misasApp')
 				tax_percentage : $scope.tax_percentage,
 				vat_percentage : $scope.vat_percentage,
 				sss : $scope.sss,
-				n_prn : $scope.n_prm,
+				n_prn : $scope.n_prn,
 				effective : $scope.effective,
 				action : $scope.general_action
 			});
-			
 			$scope.file =  $http({
 		        method  : 'POST',
 		        url     : '../client/save_client',
@@ -95,7 +73,7 @@ angular.module('misasApp')
 		        headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
 		        })
 		        .success(function(data){
-		        	console.log(data.error);
+		        	console.log(data);
 		        	if(data.error == '0')
 		      		{
 		      			Notification.success({message:data.message,delay: 1000});
