@@ -22,11 +22,25 @@
 		    	<div class="col-lg-6">
 					<div class="form-group">
 					    <label for="email">Employee Number :</label>
-					    <input type="text" class="form-control" id="email" autofocus>
+					    <div class="input-group">
+						    <!-- <input type="text" class="form-control" id="email" > -->
+						    <input type="text" class="form-control" ng-model="employee" bs-options="employee for employee in list_employees"	 bs-typeahead>
+						    <span class="input-group-btn">
+						    	<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+						    </span>
+					  	</div>
 					</div>
+					
 					<div class="form-group">
 					    <label for="email">Client :</label>
-					    <input type="text" class="form-control" id="email" >
+					     <!-- <input type="text" class="form-control" id="email"> -->
+					     <div class="input-group">
+						    <input type="text" class="form-control" ng-model="client" bs-options="client for client in list_clients" autofocus bs-typeahead>
+						    <span class="input-group-btn">
+						    	<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+						    </span>
+					  	</div>
+
 					</div>
 					<div class="form-group">
 					    <label for="email">Agency :</label>

@@ -138,6 +138,17 @@
 				$this->load->view('includes/footer');
 			}
 	    }
+	    function computing(){
+	    	if(!$this->session->userdata('user_id')){
+              redirect('login');
+       		}else{
+       			$data['user_info'] = $this->User_model->get_user_information($this->session->userdata('user_id'));
+		    	$this->load->view('includes/header');
+				$this->load->view('includes/nav-bar',$data);
+				$this->load->view('computing/add_computing');
+				$this->load->view('includes/footer');
+			}
+	    }
 
 
 

@@ -21,6 +21,9 @@
 			width:100px;
 			float: right;
 		}
+		.dropdown-menu>li>a {
+		    width: 400px;
+		}
 		
 	</style>
 

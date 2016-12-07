@@ -1,4 +1,4 @@
-angular.module('misasApp',['ui-notification','ngTable'])
+angular.module('misasApp',['ui-notification','ngTable', 'mgcrea.ngStrap'])
 	.controller('loginCtrl', function ($scope,Notification,$http){
 
 		$scope.validation_class = 'form-group';
