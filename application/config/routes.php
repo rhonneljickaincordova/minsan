@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['staff/reports/ActiveEmployeeList'] = 'reports/active_employees';
 $route['staff/reports/ClientMasterList'] = 'reports/active_clients';
+$route['staff/reports/ComputingReport'] = 'reports/computing_reports';

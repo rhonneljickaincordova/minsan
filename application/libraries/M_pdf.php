@@ -21,4 +21,13 @@ class M_pdf {
          
         return new mPDF($param);
     }
+
+    function landscape_pdf()
+    {
+        include_once APPPATH.'/third_party/mpdf/mpdf.php';
+        
+        $mpdf = new mPDF('utf-8', 'A4-L'); 
+
+        return $mpdf;
+    }
 }

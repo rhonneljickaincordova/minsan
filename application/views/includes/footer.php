@@ -17,7 +17,6 @@
 
 <script src="<?php echo base_url(); ?>assets/js/payroll/add_payroll.js"></script>
 
-
 <script src="<?php echo base_url(); ?>bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo base_url(); ?>bower_components/bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="<?php echo base_url(); ?>bower_components/tether/dist/js/tether.min.js"></script>
@@ -27,6 +26,7 @@
 <script src="<?php echo base_url(); ?>bower_components/angular-strap/dist/angular-strap.min.js"></script>
 <script src="<?php echo base_url(); ?>bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
 
+<script src="<?php echo base_url(); ?>assets/js/reports/computing_report.js"></script>
 
 </body>
 </html>

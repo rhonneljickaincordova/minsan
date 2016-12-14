@@ -19,7 +19,7 @@
 							    <label for="email">Start Date :</label>
 							    <div class="input-group">
 								    <!-- <input type="text" class="form-control" id="email" > -->
-								    <input type="date" class="form-control" ng-model="start">
+								    <input type="date" class="form-control" ng-model="start" id="s_date">
 							  	</div>
 							</div>
 							
@@ -27,12 +27,12 @@
 							    <label for="email">End Date :</label>
 							     <!-- <input type="text" class="form-control" id="email"> -->
 							     <div class="input-group">
-								    <input type="date" class="form-control" ng-model="end" >
+								    <input type="date" class="form-control" ng-model="end"  id="e_date">
 							  	</div>
 
 							</div>
 							<div class="button">
-								<a type="button" class="btn btn-primary back-button" ><b>Generate</b></a>
+								<a type="button" class="btn btn-primary back-button" id="generateComputingReport" ><b>Generate</b></a>
 							</div>	
 							
 							

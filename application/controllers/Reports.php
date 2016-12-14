@@ -33,6 +33,47 @@
             $pdf->WriteHTML($html);
             $pdf->Output($file, 'I');
         }
+
+        function computing_reports(){
+            $data = "";
+            $html = $this->load->view('reportTemplates/computing_report', $data, true);
+            $file = "";
+
+            ini_set('memory_limit','32M');
+                 
+            $this->load->library('m_pdf');
+            $pdf = $this->m_pdf->landscape_pdf();
+            
+            $pdf->SetFooter(array(
+                'L' => array(
+                    'content' => 'Report Generate on {DATE m-j-Y H:i:s}',
+                    'font-style' => '',
+                    'font-size' => '9',
+                ),
+                'R' => array(
+                    'content' => '{PAGENO}',
+                    'font-style' => '',
+                    'font-size' => '9',
+                ),
+                'line' => 1,
+            ), 'O' );
+
+            $pdf->SetFooter(array(
+                'L' => array(
+                    'content' => 'Report Generate on {DATE m-j-Y H:i:s}',
+                    'font-style' => '',
+                    'font-size' => '9',
+                ),
+                'R' => array(
+                    'content' => '{PAGENO}',
+                    'font-style' => '',
+                    'font-size' => '9',
+                ),
+                'line' => 1,
+            ), 'E' );
+            $pdf->WriteHTML($html);
+            $pdf->Output($file, 'I');
+        }
 	}
 
 ?>
