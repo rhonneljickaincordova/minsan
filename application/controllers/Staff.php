@@ -41,7 +41,6 @@
        				if($_SERVER['QUERY_STRING'] == NULL){
        					$data['action'] = 'add';
 	       				foreach ($data['latest_id'] as $key) {
-	       					$key->employee_id = "";
 	       					$key->employee_id = $key->employee_id +1;
 	       				}
 	       			}else{

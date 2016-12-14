@@ -1,6 +1,8 @@
 angular.module('misasApp')
 	.controller('addEmployeeCtrl', function ($scope,Notification,$http,NgTableParams){
-	
+		
+		$scope.status = 'Active';
+
 		$scope.initial_values = function($latest_id,$action){
 			if($latest_id == ""){
 				//no record in the database
@@ -38,7 +40,7 @@ angular.module('misasApp')
 							$scope.premium = data.premium;
 							$scope.contact = data.contact_number;
 							$scope.position = data.position;
-							$scope.status = data.status;
+							$scope.status = 'Active';
 							$scope.date_res = new Date(data.date_res);
 							$scope.address = data.address;
 							$scope.client = data.client;

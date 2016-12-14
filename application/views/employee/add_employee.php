@@ -81,7 +81,7 @@
 					
 					<div class="form-group">
 					    <label for="email">Status :</label>
-					    <input type="text" class="form-control" id="email" ng-model="status">
+					    <input type="text" class="form-control" id="email" ng-model="status" readonly>
 					</div>
 					<div class="form-group">
 					    <label for="email">Date Res :</label>
