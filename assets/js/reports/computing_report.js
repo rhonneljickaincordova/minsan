@@ -18,7 +18,6 @@ $(document).ready(function(){
 			edate = edate;
 		}
 
-		$(location).attr('href', './reports/ComputingReport?sdate='+sdate+'&edate='+edate);
-
+		window.open('./reports/ComputingReport?sdate='+sdate+'&edate='+edate , '_blank');
 	});
 });
