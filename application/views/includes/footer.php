@@ -19,7 +19,7 @@
 
 <script src="<?php echo base_url(); ?>assets/js/report/manage_reports.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/js/reports/computing_report.js"></script>
+
 
 
 
@@ -32,6 +32,6 @@
 <script src="<?php echo base_url(); ?>bower_components/angular-strap/dist/angular-strap.min.js"></script>
 <script src="<?php echo base_url(); ?>bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
 
-
+<script src="<?php echo base_url(); ?>assets/js/reports/computing_report.js"></script>
 </body>
 </html>

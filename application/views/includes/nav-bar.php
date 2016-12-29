@@ -2,7 +2,7 @@
   <div class="container-fluid">
       <ul class="nav navbar-nav">
         <li ><a href="<?php echo base_url();?>staff/dashboard">
-        <b class="nav-bar-title"><i class="fa fa-shield"></i> <i class="left-spacer"></i> MATINA INVESTIGATION SECURITY AGENCY SERVICES INC.</b></a></li>
+        <b class="nav-bar-title"><i class="fa fa-shield"></i> <i class="left-spacer"></i> MATI INVESTIGATION SECURITY AGENCY SERVICES INC.</b></a></li>
         </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>

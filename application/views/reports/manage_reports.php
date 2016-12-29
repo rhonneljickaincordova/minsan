@@ -49,7 +49,7 @@
 
 				    </tr>
 				    <tr>
-				    	<td><a href="<?php echo base_url();?>reports/active_employees"><b>List of Staff Employee</b></a></td>
+				    	<td><a href="<?php echo base_url();?>reports/active_employees" target="_blank"><b>List of Staff Employee</b></a></td>
 				    	<td></td>
 				    	<td></td>
 				    	<td></td>
@@ -63,7 +63,7 @@
 
 				    </tr>
 				    <tr>
-				        <td><a href="<?php echo base_url();?>reports/active_clients"><b>Client's Master List</b></a></td>
+				        <td><a href="<?php echo base_url();?>reports/active_clients" target="_blank"><b>Client's Master List</b></a></td>
 				        <td></td>
 				    	<td></td>
 				    	<td></td>
